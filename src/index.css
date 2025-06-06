@@ -1,0 +1,209 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-lexend;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-lexend font-semibold tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  p {
+    @apply leading-7;
+  }
+}
+
+@layer components {
+  .hero-gradient {
+    @apply bg-gradient-to-r from-blue-600 via-blue-400 to-blue-600 bg-size-200 animate-gradient-flow;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+  
+  .project-card {
+    @apply relative overflow-hidden rounded-lg border border-border transition-all;
+  }
+  
+  .project-card:hover {
+    @apply border-primary/50 shadow-lg shadow-primary/10;
+  }
+  
+  .skill-bar {
+    @apply h-2 rounded-full bg-secondary overflow-hidden relative;
+  }
+  
+  .skill-progress {
+    @apply h-full rounded-full absolute left-0 top-0 bg-primary;
+  }
+  
+  .timeline-item {
+    @apply relative pl-8 pb-8 border-l border-border;
+  }
+  
+  .timeline-dot {
+    @apply absolute -left-[5px] w-2.5 h-2.5 rounded-full bg-primary;
+  }
+}
+
+/* Neural Network Animation for Hero Section */
+.neural-network {
+  @apply absolute inset-0 opacity-5 dark:opacity-10 pointer-events-none;
+}
+
+.node {
+  @apply absolute w-1 h-1 md:w-1.5 md:h-1.5 rounded-full bg-primary animate-pulse-slow;
+}
+
+.connection {
+  @apply absolute bg-primary opacity-30 transform origin-left;
+  height: 1px;
+}
+
+/* Code block styling for blog */
+.code-block {
+  @apply bg-secondary/30 p-4 rounded-lg font-mono text-sm my-4 overflow-x-auto;
+}
+
+/* Syntax highlighting for code */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  @apply text-muted-foreground;
+}
+
+.token.punctuation {
+  @apply text-foreground;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  @apply text-red-500 dark:text-red-400;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  @apply text-green-600 dark:text-green-400;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  @apply text-yellow-500 dark:text-yellow-300;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  @apply text-blue-600 dark:text-blue-400;
+}
+
+.token.function,
+.token.class-name {
+  @apply text-purple-600 dark:text-purple-400;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  @apply text-orange-500 dark:text-orange-300;
+}
