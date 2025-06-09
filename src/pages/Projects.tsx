@@ -11,7 +11,8 @@ const ProjectsPage = () => {
       description: "Developed an XGBoost-based model that reduced fraud rates by 42% and integrated unsupervised learning (Isolation Forest, Autoencoders) for robust anomaly detection, with emphasis on integrating these solutions into scalable software systems.",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6", // Placeholder image
       tags: ["Fraud Detection", "XGBoost", "Risk Scoring", "Unsupervised Learning"],
-      tagColors: ["yellow", "green", "blue", "purple"]
+      tagColors: ["yellow", "green", "blue", "purple"],
+      blogPostId: "tech-blog-fraud-detection"
     },
     {
       id: "dynamic-pricing-hospitality",
@@ -19,7 +20,8 @@ const ProjectsPage = () => {
       description: "Engineered predictive pricing models leveraging demand forecasting and price elasticity analyses, increasing hotel revenue by 15–20% through optimized dynamic pricing strategies, coupled with robust API development for seamless integration into client systems.",
       image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4", // Placeholder image for hospitality/business
       tags: ["Dynamic Pricing", "Predictive Modeling", "Hospitality", "API Development"],
-      tagColors: ["blue", "green", "orange", "red"]
+      tagColors: ["blue", "green", "orange", "red"],
+      blogPostId: undefined
     },
     {
       id: "smart-city-analytics",
@@ -27,7 +29,8 @@ const ProjectsPage = () => {
       description: "Created an AI platform for real-time traffic flow optimization and energy demand forecasting, reducing congestion errors by 30% and power grid failures by 25%, incorporating innovative software engineering practices to integrate data streams and visualization dashboards.",
       image: "https://images.unsplash.com/photo-1503236795479-95186d4f0c15", // Placeholder image for city/tech
       tags: ["Smart City", "AI Platform", "Traffic Optimization", "Energy Forecasting"],
-      tagColors: ["green", "blue", "yellow", "purple"]
+      tagColors: ["green", "blue", "yellow", "purple"],
+      blogPostId: undefined
     },
     {
       id: "synthetic-data-llm",
@@ -35,7 +38,8 @@ const ProjectsPage = () => {
       description: "Implemented GAN-based synthetic data generation to enhance training datasets and fine-tuned LLMs (GPT-4, T5-small, LLaMA 2), improving model performance by up to 40% on task-specific benchmarks and integrating AI solutions into broader educational initiatives.",
       image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81", // Placeholder image for AI/LLM
       tags: ["Synthetic Data", "GANs", "LLM Fine-Tuning", "GPT-4"],
-      tagColors: ["purple", "red", "blue", "green"]
+      tagColors: ["purple", "red", "blue", "green"],
+      blogPostId: "insights-ai-tools-integration"
     },
     {
       id: "ai-legal-automation",
@@ -43,7 +47,8 @@ const ProjectsPage = () => {
       description: "Transforming legal practices with intelligent automation. We offer a suite of AI-powered agents designed to enhance efficiency, streamline workflows, and reduce administrative burdens for law firms. Our solutions cover client-facing interactions (intake, automated updates, FAQs), internal operations (document automation & review, e-discovery triage, legal research assistance, task & deadline management, billing), and specialized legal practice areas (contract analysis, due diligence, IP management). All solutions are developed with a strong emphasis on human oversight, data security, ethical considerations, and integration with existing legal software. Empower your firm to focus on high-value legal work by leveraging cutting-edge AI.",
       image: "https://images.unsplash.com/photo-1589998059171-988d887df646",
       tags: ["Legal Tech", "AI Automation", "Law Firm Efficiency", "Case Management", "Document Automation", "Legal AI"],
-      tagColors: ["blue", "purple", "green", "yellow", "orange", "red"]
+      tagColors: ["blue", "purple", "green", "yellow", "orange", "red"],
+      blogPostId: undefined
     },
     {
       id: "ai-entrepreneur-engine",
@@ -51,7 +56,8 @@ const ProjectsPage = () => {
       description: "Supercharge your business with our integrated suite of AI agents, orchestrated by a central Managing Director Agent. This ecosystem automates key entrepreneurial tasks from idea validation and market analysis to lead generation, multi-channel marketing, customer service, and data-driven insights. Empowering entrepreneurs to save time, make smarter decisions, and focus on strategic growth.",
       image: "https://images.unsplash.com/photo-1556761175-b413da4baf72",
       tags: ["Entrepreneur AI", "Startup Automation", "Business Growth", "Multi-Agent Systems", "Lead Generation", "AI Strategy"],
-      tagColors: ["green", "blue", "purple", "red", "yellow", "orange"]
+      tagColors: ["green", "blue", "purple", "red", "yellow", "orange"],
+      blogPostId: undefined
     }
   ];
     
@@ -121,13 +127,23 @@ const ProjectsPage = () => {
                       <span>GitHub</span>
                     </a>
                   </Button>
-                  <Button variant="ghost" size="sm" className="p-0" asChild>
-                    <Link to={`/projects/${project.id}`} className="flex items-center">
-                      <FileText className="mr-1 h-4 w-4" />
-                      <span>View Details</span>
-                      <ArrowRight className="ml-1 h-4 w-4" />
-                    </Link>
-                  </Button>
+                  {project.blogPostId ? (
+                    <Button variant="ghost" size="sm" className="p-0" asChild>
+                      <Link to={`/blog/${project.blogPostId}`} className="flex items-center">
+                        <FileText className="mr-1 h-4 w-4" />
+                        <span>Read Blog Post</span>
+                        <ArrowRight className="ml-1 h-4 w-4" />
+                      </Link>
+                    </Button>
+                  ) : (
+                    <Button variant="ghost" size="sm" className="p-0" asChild>
+                      <Link to={`/projects/${project.id}`} className="flex items-center">
+                        <FileText className="mr-1 h-4 w-4" />
+                        <span>View Details</span>
+                        <ArrowRight className="ml-1 h-4 w-4" />
+                      </Link>
+                    </Button>
+                  )}
                 </div>
               </div>
             </div>

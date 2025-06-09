@@ -68,7 +68,7 @@ ignite-portfolio-studio-main/
 ### 4. Key Configuration Files
 
 *   **`package.json`**: Defines project dependencies, scripts (dev, build, lint, preview), and metadata.
-*   **`vite.config.ts`**: Configures the Vite build process, including plugins (React SWC, `lovable-tagger` for development), server options (port 8080), and path aliases (`@` for `src/`).
+*   **`vite.config.ts`**: Configures the Vite build process, including plugins (React SWC), server options (port 8080), and path aliases (`@` for `src/`).
 *   **`tailwind.config.ts`**: Configures Tailwind CSS, including themes, plugins (e.g., `tailwindcss-animate`), and content paths.
 *   **`tsconfig.json` (and variants)**: Configure TypeScript compiler options.
 *   **`eslint.config.js`**: Configures ESLint for code linting.
@@ -104,6 +104,5 @@ ignite-portfolio-studio-main/
 *   **React Hook Form & Zod**: For robust and type-safe form handling and validation.
 *   **Hugging Face Transformers.js**: Indicates the potential for integrating client-side AI models for tasks like NLP, image analysis, etc., within the `AIPlayground` or other sections.
 *   **Recharts**: For creating interactive charts and visualizations.
-*   **`lovable-tagger`**: A development-only plugin, possibly for component analytics or visual debugging during development.
 
 This document should serve as a good starting point for understanding the codebase. For more detailed information, refer to the specific files and directories mentioned.

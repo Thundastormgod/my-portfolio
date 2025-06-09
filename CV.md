@@ -3,7 +3,7 @@ Machine Learning Scientist & Engineer | AI-Driven Revenue Optimization, Smart Ci
 London, United Kingdom | gbamilavictor@gmail.com | GitHub
 
 Professional Summary
-Innovative Machine Learning Scientist & Engineer with 8+ years of experience delivering end-to-end AI solutions across multiple domains, including financial fraud detection, revenue optimization in hospitality, smart city analytics, and robust software engineering. Also leveraging  years of dedicated software engineering experience focused on AI integration and implementation—leveraging tools like ChatGPT, Gemini, and Grok to create cutting-edge solutions. Adept at building scalable ML models, optimizing data pipelines, and deploying robust MLOps infrastructures on AWS and GCP. I excel in translating complex data and educational concepts into actionable, AI-driven solutions that drive operational efficiencies and transform learning experiences.
+Innovative Machine Learning Scientist & Engineer with 8+ years of experience delivering end-to-end AI solutions across multiple domains, including financial fraud detection, revenue optimization in hospitality, smart city analytics, and robust software engineering. Also leveraging  years of dedicated software engineering experience focused on AI integration and implementation—leveraging tools like ChatGPT, Gemini, and Grok to create cutting-edge solutions. Adept at building and finetuning scalable ML models, optimizing data pipelines, and deploying robust MLOps infrastructures on AWS and GCP. I excel in translating complex data and educational concepts into actionable, data-driven solutions that drive operational efficiencies and transform learning experiences.
 
 Core Skills & Expertise
 Machine Learning & Deep Learning:
