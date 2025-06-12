@@ -1,8 +1,9 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import NeuralNetwork from "@/components/home/NeuralNetwork";
-import { ArrowDown, ArrowRight, Database, FileText, Github, BarChart3 } from "lucide-react";
+import { ArrowDown, ArrowRight, Database, FileText, Github } from "lucide-react";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
+import { Badge } from "@/components/ui/badge";
 
 const HomePage = () => {
   return (
@@ -83,11 +84,23 @@ const HomePage = () => {
                   <span className="inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:bg-green-900/30 dark:text-green-300">
                     XGBoost
                   </span>
-                  <span className="inline-flex items-center rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800 dark:bg-blue-900/30 dark:text-blue-300">
-                    Risk Scoring
+                  <span className="inline-flex items-center rounded-full bg-purple-100 px-2.5 py-0.5 text-xs font-medium text-purple-800 dark:bg-purple-900/30 dark:text-purple-300">
+                    Anomaly Detection
                   </span>
-                   <span className="inline-flex items-center rounded-full bg-purple-100 px-2.5 py-0.5 text-xs font-medium text-purple-800 dark:bg-purple-900/30 dark:text-purple-300">
-                    Unsupervised Learning
+                  <span className="inline-flex items-center rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800 dark:bg-blue-900/30 dark:text-blue-300">
+                    MLOps
+                  </span>
+                  <span className="inline-flex items-center rounded-full bg-pink-100 px-2.5 py-0.5 text-xs font-medium text-pink-800 dark:bg-pink-900/30 dark:text-pink-300">
+                    Isolation Forest
+                  </span>
+                  <span className="inline-flex items-center rounded-full bg-indigo-100 px-2.5 py-0.5 text-xs font-medium text-indigo-800 dark:bg-indigo-900/30 dark:text-indigo-300">
+                    Real-Time Processing
+                  </span>
+                  <span className="inline-flex items-center rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-800 dark:bg-gray-700 dark:text-gray-300">
+                    SHAP
+                  </span>
+                  <span className="inline-flex items-center rounded-full bg-teal-100 px-2.5 py-0.5 text-xs font-medium text-teal-800 dark:bg-teal-900/30 dark:text-teal-300">
+                    AWS SageMaker
                   </span>
                 </div>
                 <h3 className="text-xl mb-2">AI-Driven Fraud Detection & Risk Scoring</h3>
@@ -96,13 +109,13 @@ const HomePage = () => {
                 </p>
                 <div className="flex items-center gap-4">
                   <Button variant="ghost" size="sm" className="p-0" asChild>
-                    <a href="https://github.com/gbamilavictor" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                    <a href="https://github.com/Thundastormgod/my-portfolio" target="_blank" rel="noopener noreferrer" className="flex items-center">
                       <Github className="mr-1 h-4 w-4" />
-                      <span>GitHub</span>
+                      <span>Source</span>
                     </a>
                   </Button>
                   <Button variant="ghost" size="sm" className="p-0" asChild>
-                    <Link to="/projects#ai-fraud-detection" className="flex items-center">
+                    <Link to="/blog/xgboost-fraud-detection" className="flex items-center">
                       <FileText className="mr-1 h-4 w-4" />
                       <span>Read More</span>
                     </Link>
@@ -126,13 +139,25 @@ const HomePage = () => {
                     Dynamic Pricing
                   </span>
                   <span className="inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:bg-green-900/30 dark:text-green-300">
-                    Predictive Modeling
+                    Machine Learning
                   </span>
                   <span className="inline-flex items-center rounded-full bg-orange-100 px-2.5 py-0.5 text-xs font-medium text-orange-800 dark:bg-orange-900/30 dark:text-orange-300">
                     Hospitality
                   </span>
                   <span className="inline-flex items-center rounded-full bg-red-100 px-2.5 py-0.5 text-xs font-medium text-red-800 dark:bg-red-900/30 dark:text-red-300">
-                    API Development
+                    MLOps
+                  </span>
+                  <span className="inline-flex items-center rounded-full bg-purple-100 px-2.5 py-0.5 text-xs font-medium text-purple-800 dark:bg-purple-900/30 dark:text-purple-300">
+                    Reinforcement Learning
+                  </span>
+                  <span className="inline-flex items-center rounded-full bg-yellow-100 px-2.5 py-0.5 text-xs font-medium text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300">
+                    XGBoost
+                  </span>
+                  <span className="inline-flex items-center rounded-full bg-teal-100 px-2.5 py-0.5 text-xs font-medium text-teal-800 dark:bg-teal-900/30 dark:text-teal-300">
+                    AWS EKS
+                  </span>
+                  <span className="inline-flex items-center rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-800 dark:bg-gray-700 dark:text-gray-300">
+                    Terraform
                   </span>
                 </div>
                 <h3 className="text-xl mb-2">Dynamic Pricing for Hospitality</h3>
@@ -141,13 +166,13 @@ const HomePage = () => {
                 </p>
                 <div className="flex items-center gap-4">
                   <Button variant="ghost" size="sm" className="p-0" asChild>
-                    <a href="https://github.com/gbamilavictor" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                    <a href="https://github.com/Thundastormgod/my-portfolio" target="_blank" rel="noopener noreferrer" className="flex items-center">
                       <Github className="mr-1 h-4 w-4" />
-                      <span>GitHub</span>
+                      <span>Source</span>
                     </a>
                   </Button>
                   <Button variant="ghost" size="sm" className="p-0" asChild>
-                    <Link to="/projects#dynamic-pricing-hospitality" className="flex items-center">
+                    <Link to="/blog/dynamic-pricing-for-hospitality" className="flex items-center">
                       <FileText className="mr-1 h-4 w-4" />
                       <span>Read More</span>
                     </Link>
@@ -164,6 +189,7 @@ const HomePage = () => {
                   alt="Smart City Analytics"
                   className="w-full h-full object-cover transition-transform group-hover:scale-105"
                 />
+                <Badge variant="outline" className="absolute top-3 right-3 z-10 bg-background/80 backdrop-blur-sm">Coming soon</Badge>
               </div>
               <div className="p-4">
                 <div className="flex flex-wrap gap-2 mb-3">
@@ -186,17 +212,24 @@ const HomePage = () => {
                 </p>
                 <div className="flex items-center gap-4">
                   <Button variant="ghost" size="sm" className="p-0" asChild>
-                    <a href="https://github.com/gbamilavictor" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                    <a href="https://github.com/Thundastormgod/my-portfolio" target="_blank" rel="noopener noreferrer" className="flex items-center">
                       <Github className="mr-1 h-4 w-4" />
-                      <span>GitHub</span>
+                      <span>Source</span>
                     </a>
                   </Button>
-                  <Button variant="ghost" size="sm" className="p-0" asChild>
-                    <Link to="/projects#smart-city-analytics" className="flex items-center">
-                      <FileText className="mr-1 h-4 w-4" />
-                      <span>Read More</span>
-                    </Link>
-                  </Button>
+                  <Tooltip>
+                      <TooltipTrigger asChild>
+                        <Button variant="ghost" size="sm" className="p-0 opacity-50 cursor-not-allowed" asChild>
+                          <div className="flex items-center">
+                            <FileText className="mr-1 h-4 w-4" />
+                            <span>Read More</span>
+                          </div>
+                        </Button>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Coming soon...</p>
+                      </TooltipContent>
+                    </Tooltip>
                 </div>
               </div>
             </div>
@@ -361,6 +394,7 @@ const HomePage = () => {
                   alt="Blog Post"
                   className="w-full h-full object-cover transition-transform group-hover:scale-105"
                 />
+                <Badge variant="outline" className="absolute top-3 right-3 z-10 bg-background/80 backdrop-blur-sm">Coming soon</Badge>
               </div>
               <div className="p-4">
                 <div className="flex flex-wrap gap-2 mb-3">
@@ -378,12 +412,19 @@ const HomePage = () => {
                 <p className="text-muted-foreground mb-4">
                   An exploration of how LLMs are transforming enterprise operations and what to expect in the coming years.
                 </p>
-                <Button variant="ghost" size="sm" className="p-0" asChild>
-                  <Link to="/blog/future-of-llm" className="flex items-center">
-                    <span>Read Article</span>
-                    <ArrowRight className="ml-1 h-4 w-4" />
-                  </Link>
-                </Button>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Button variant="ghost" size="sm" className="p-0 opacity-50 cursor-not-allowed" asChild>
+                      <div className="flex items-center">
+                        <span>Read Article</span>
+                        <ArrowRight className="ml-1 h-4 w-4" />
+                      </div>
+                    </Button>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>Coming soon...</p>
+                  </TooltipContent>
+                </Tooltip>
               </div>
             </div>
             
@@ -395,6 +436,7 @@ const HomePage = () => {
                   alt="Blog Post"
                   className="w-full h-full object-cover transition-transform group-hover:scale-105"
                 />
+                <Badge variant="outline" className="absolute top-3 right-3 z-10 bg-background/80 backdrop-blur-sm">Coming soon</Badge>
               </div>
               <div className="p-4">
                 <div className="flex flex-wrap gap-2 mb-3">
@@ -412,12 +454,19 @@ const HomePage = () => {
                 <p className="text-muted-foreground mb-4">
                   Best practices for building scalable, efficient machine learning operations pipelines in production environments.
                 </p>
-                <Button variant="ghost" size="sm" className="p-0" asChild>
-                  <Link to="/blog/optimizing-mlops" className="flex items-center">
-                    <span>Read Article</span>
-                    <ArrowRight className="ml-1 h-4 w-4" />
-                  </Link>
-                </Button>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Button variant="ghost" size="sm" className="p-0 opacity-50 cursor-not-allowed" asChild>
+                      <div className="flex items-center">
+                        <span>Read Article</span>
+                        <ArrowRight className="ml-1 h-4 w-4" />
+                      </div>
+                    </Button>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>Coming soon...</p>
+                  </TooltipContent>
+                </Tooltip>
               </div>
             </div>
             
@@ -429,6 +478,7 @@ const HomePage = () => {
                   alt="Blog Post"
                   className="w-full h-full object-cover transition-transform group-hover:scale-105"
                 />
+                <Badge variant="outline" className="absolute top-3 right-3 z-10 bg-background/80 backdrop-blur-sm">Coming soon</Badge>
               </div>
               <div className="p-4">
                 <div className="flex flex-wrap gap-2 mb-3">
@@ -446,12 +496,19 @@ const HomePage = () => {
                 <p className="text-muted-foreground mb-4">
                   Strategies for effectively transitioning machine learning models from research environments to production systems.
                 </p>
-                <Button variant="ghost" size="sm" className="p-0" asChild>
-                  <Link to="/blog/research-to-production" className="flex items-center">
-                    <span>Read Article</span>
-                    <ArrowRight className="ml-1 h-4 w-4" />
-                  </Link>
-                </Button>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Button variant="ghost" size="sm" className="p-0 opacity-50 cursor-not-allowed" asChild>
+                      <div className="flex items-center">
+                        <span>Read Article</span>
+                        <ArrowRight className="ml-1 h-4 w-4" />
+                      </div>
+                    </Button>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>Coming soon...</p>
+                  </TooltipContent>
+                </Tooltip>
               </div>
             </div>
           </div>

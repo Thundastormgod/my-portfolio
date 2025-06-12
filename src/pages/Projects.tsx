@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Github, FileText } from "lucide-react";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 
 const ProjectsPage = () => {
   const projects = [
@@ -12,7 +13,7 @@ const ProjectsPage = () => {
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6", // Placeholder image
       tags: ["Fraud Detection", "XGBoost", "Risk Scoring", "Unsupervised Learning"],
       tagColors: ["yellow", "green", "blue", "purple"],
-      blogPostId: "tech-blog-fraud-detection"
+      blogPostId: "xgboost-fraud-detection"
     },
     {
       id: "dynamic-pricing-hospitality",
@@ -21,7 +22,7 @@ const ProjectsPage = () => {
       image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4", // Placeholder image for hospitality/business
       tags: ["Dynamic Pricing", "Predictive Modeling", "Hospitality", "API Development"],
       tagColors: ["blue", "green", "orange", "red"],
-      blogPostId: undefined
+      blogPostId: "dynamic-pricing-for-hospitality"
     },
     {
       id: "smart-city-analytics",
@@ -39,7 +40,7 @@ const ProjectsPage = () => {
       image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81", // Placeholder image for AI/LLM
       tags: ["Synthetic Data", "GANs", "LLM Fine-Tuning", "GPT-4"],
       tagColors: ["purple", "red", "blue", "green"],
-      blogPostId: "insights-ai-tools-integration"
+      blogPostId: undefined
     },
     {
       id: "ai-legal-automation",
@@ -136,13 +137,20 @@ const ProjectsPage = () => {
                       </Link>
                     </Button>
                   ) : (
-                    <Button variant="ghost" size="sm" className="p-0" asChild>
-                      <Link to={`/projects/${project.id}`} className="flex items-center">
-                        <FileText className="mr-1 h-4 w-4" />
-                        <span>View Details</span>
-                        <ArrowRight className="ml-1 h-4 w-4" />
-                      </Link>
-                    </Button>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <Button variant="ghost" size="sm" className="p-0 opacity-50 cursor-not-allowed" asChild>
+                          <div className="flex items-center">
+                            <FileText className="mr-1 h-4 w-4" />
+                            <span>View Details</span>
+                            <ArrowRight className="ml-1 h-4 w-4" />
+                          </div>
+                        </Button>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Coming soon...</p>
+                      </TooltipContent>
+                    </Tooltip>
                   )}
                 </div>
               </div>

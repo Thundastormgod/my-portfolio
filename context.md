@@ -1,12 +1,12 @@
-## Project Context: Ignite Portfolio Studio
+ Project Context: Ignite Portfolio Studio
 
 This document provides a high-level overview of the `ignite-portfolio-studio-main` codebase.
 
-### 1. Project Overview
+ 1. Project Overview
 
 This project is a modern web application, likely a personal portfolio or studio website. It's built using React with Vite as the build tool and TypeScript for static typing. The UI is styled with Tailwind CSS and utilizes Shadcn/ui components, which are built on Radix UI primitives. The application features client-side routing, data fetching capabilities, and potentially incorporates AI-driven features.
 
-### 2. Technology Stack
+2. Technology Stack
 
 *   **Frontend Framework:** React 18.x
 *   **Build Tool:** Vite

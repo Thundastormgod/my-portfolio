@@ -10,6 +10,7 @@ import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Experience from "./pages/Experience";
 import Blog from "./pages/Blog";
+import BlogPostPage from "./pages/BlogPostPage";
 import AIPlayground from "./pages/AIPlayground";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -43,9 +44,14 @@ const App = () => (
               <Experience />
             </Layout>
           } />
-          <Route path="/blog" element={
+                    <Route path="/blog" element={
             <Layout>
               <Blog />
+            </Layout>
+          } />
+          <Route path="/blog/:blogPostId" element={
+            <Layout>
+              <BlogPostPage />
             </Layout>
           } />
           <Route path="/playground" element={

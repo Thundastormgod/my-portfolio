@@ -64,6 +64,12 @@ Created an AI platform for real-time traffic flow optimization and energy demand
 Synthetic Data & LLM Fine-Tuning:
 Implemented GAN-based synthetic data generation to enhance training datasets and fine-tuned LLMs (GPT-4, T5-small, LLaMA 2), improving model performance by up to 40% on task-specific benchmarks and integrating AI solutions into broader educational initiatives.
 
+**Dynamic Pricing for Hospitality (Ibeto Hotels Abuja):**
+Led the transition from a static pricing model to a data-driven, real-time dynamic strategy for a 400-room hotel. Leveraged advanced data science, machine learning (XGBoost for forecasting, PPO Reinforcement Learning for optimization), and a robust MLOps framework. Achieved a 7.8% increase in RevPAR, 22% reduction in forecasting error, and 30% reduction in manual revenue management workload. Full details in the [blog post](./src/blog/dynamic-pricing-for-hospitality.md) or the original [project report](./documents/Dynamic%20Pricing%20report%20for%20Hotel%20in%20Abuja.pdf).
+
+**AI-Driven Fraud Detection & Risk Scoring (XGBoost & Isolation Forest):**
+Overhauled fraud detection capabilities by building an integrated, end-to-end AI system. This initiative addressed critical business pain points including financial losses, reactive detection, and high false positives. The system, leveraging XGBoost and Isolation Forest, resulted in a 40% increase in fraud detection and £5M in cost savings, supported by a robust data strategy and modern MLOps architecture. More information available in the [blog post](./src/blog/xgboost-fraud-detection.md) or the original [project report](./documents/Xgboost%20and%20Isolation%20Forest%20Fraud%20Detection%20report..pdf).
+
 Education
 Master of Science in Artificial Intelligence
 University of Wolverhampton, United Kingdom | 2023 – 2024
