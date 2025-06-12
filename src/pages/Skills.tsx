@@ -1,6 +1,6 @@
 
 import { Progress } from "@/components/ui/progress";
-import { Database, BarChart3, FileText, Code, Server, LineChart } from "lucide-react";
+import { Database, BarChart2, FileText, Code, Server, LineChart } from "lucide-react";
 
 const SkillsPage = () => {
   const skillCategories = [
@@ -41,7 +41,7 @@ const SkillsPage = () => {
     },
     {
       name: "Data Visualization",
-      icon: <BarChart3 className="h-6 w-6 text-primary" />,
+      icon: <BarChart2 className="h-6 w-6 text-primary" />,
       skills: [
         { name: "Plotly Dash", level: 90 },
         { name: "Streamlit", level: 90 },

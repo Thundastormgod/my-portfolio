@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import NeuralNetwork from "@/components/home/NeuralNetwork";
-import { ArrowDown, ArrowRight, Database, FileText, Github } from "lucide-react";
+import { ArrowDown, ArrowRight, Database, FileText, Github, BarChart2 } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { Badge } from "@/components/ui/badge";
 
@@ -286,7 +286,7 @@ const HomePage = () => {
             {/* Skill Category 2 */}
             <div className="bg-card rounded-lg border p-6 transition-all hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10">
               <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                <BarChart3 className="h-6 w-6 text-primary" />
+                <BarChart2 className="h-6 w-6 text-primary" />
               </div>
               <h3 className="text-xl mb-4">Languages & Frameworks</h3>
               <ul className="space-y-3">
