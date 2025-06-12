@@ -52,7 +52,7 @@ const SkillsPage = () => {
       name: "Domain Expertise",
       icon: <LineChart className="h-6 w-6 text-primary" />,
       skills: [
-        { name: "Financial Crime Prevention & Risk Scoring", level: 90 },
+        { name: "Financial Crime Prevention & Credit Risk Scoring", level: 90 },
         { name: "Revenue Optimization & Dynamic Pricing (Hospitality)", level: 90 },
         { name: "Smart City Analytics (Traffic Flow, Energy Demand Forecasting)", level: 90 }
       ]
@@ -112,7 +112,7 @@ const SkillsPage = () => {
             {/* Education */}
             <div className="rounded-lg border bg-card p-4">
               <div className="flex justify-between">
-                <h3 className="font-medium">Master of Science in Data Science</h3>
+                <h3 className="font-medium">Master of Science in Artificial Intelligence</h3>
                 <span className="text-sm text-muted-foreground">2023 – 2024</span>
               </div>
               <p className="text-sm text-muted-foreground mt-1">University of Wolverhampton, United Kingdom</p>
@@ -141,10 +141,7 @@ const SkillsPage = () => {
               <p className="text-sm text-muted-foreground mt-1">Google</p>
             </div>
             <div className="rounded-lg border bg-card p-4">
-              <div className="flex justify-between">
-                <h3 className="font-medium">Certified Fraud Examiner (CFE)</h3>
-                <span className="text-sm text-muted-foreground">In Progress</span>
-              </div>
+  
               {/* <p className="text-sm text-muted-foreground mt-1">Association of Certified Fraud Examiners</p> */}
             </div>
           </div>

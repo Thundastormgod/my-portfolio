@@ -65,7 +65,7 @@ Synthetic Data & LLM Fine-Tuning:
 Implemented GAN-based synthetic data generation to enhance training datasets and fine-tuned LLMs (GPT-4, T5-small, LLaMA 2), improving model performance by up to 40% on task-specific benchmarks and integrating AI solutions into broader educational initiatives.
 
 Education
-Master of Science in Data Science
+Master of Science in Artificial Intelligence
 University of Wolverhampton, United Kingdom | 2023 – 2024
 Thesis: "Machine Learning and Artificial Intelligence in Smart City Applications"
 Coursework included advanced software engineering, AI integration, and utilizing AI tools like ChatGPT and Gemini in real-world projects.
